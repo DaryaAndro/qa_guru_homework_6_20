@@ -56,7 +56,7 @@ def test_first_user_on_page_2():
     assert response.json()['data'][0]['email'] == 'michael.lawson@reqres.in'
 
 
-def test_page_2_per_page_3():
+def test_empty_data_page_3():
     page = 3
 
     response = requests.get(url='https://reqres.in/api/users',
