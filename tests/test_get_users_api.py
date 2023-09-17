@@ -70,7 +70,7 @@ def test_empty_data_page_3():
 def test_post_create_user():
     name = 'Dasha'
     job = 'QA'
-    response = requests.post(url='https://reqres.in/api/users/1',
+    response = requests.post(url='https://reqres.in/api/users',
                              data={'name': name, 'job': job})
 
     assert response.status_code == 201
